@@ -1,0 +1,66 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #54310c;
+}
+
+/*NAV-->*/
+.navbar{
+  border-radius: 0px;
+  min-height: 85px;
+}
+.navbar-brand img{
+  height: 50px;
+  margin-left: 15px;
+}
+.navbar-default{
+  background-color: #fbefe1;
+  border-color: #fbefe1;
+}
+.nav.navbar-nav.navbar-right li a{
+  color: #935e1b;
+  border-bottom: 2px solid #fbefe1;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+.nav.navbar-nav.navbar-right li::after{
+   content: '';
+   display: block;
+   background-color: #935e1b;
+   height: 2px;
+   width: 0px;
+   transition: width 0.3s;
+}
+.nav.navbar-nav.navbar-right li:hover::after{
+  width: 100%;
+}
+.nav.navbar-nav.navbar-right li:active{
+  background-color: #fff8f0;
+}
+@media only screen and (max-width:767px){
+  .nav.navbar-nav.navbar-right li:hover::after{
+    width:0%;
+  }
+  .nav.navbar-nav.navbar-right li:active{
+    background-color: #fbefe1;
+  }
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #935e1b;
+}
+.navbar-default .navbar-toggle{
+  border-color: #935e1b;
+  background-color: #fbefe1;
+  margin-top: 24px;
+  margin-right: 30px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: #fff8f0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-color: #fbefe1;
+}
+/*********************************************/
