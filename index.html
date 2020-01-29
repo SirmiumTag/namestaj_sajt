@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>SM Sistem</title>
-    <link rel="shortcut icon" href="./img/ikonica.png"/>
+    <link rel="shortcut icon" href="./img/logo-small.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="./img/logo-small.png">
+            <img src="./img/logo-big.png">
           </a>
         </div>
         <div class="container">
@@ -33,12 +33,102 @@
               <li><a href="#">O nama</a></li>
               <li><a href="#">Cenovnik</a></li>
               <li><a href="#">Galerija</a></li>
-              <li><a href="#">Kontakt</a></li>
+              <li><a href="#ctct">Kontakt</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="container-fluid contact">
+      <h1 id="ctct">Kontakt</h1>
+      <div class="row">
+        <div class="col-sm-6 contact_frm">
+          <form>
+            <label>
+              *Ime i prezime
+              <input type="text" class="fname" name="imeprezime" id="imp">
+            </label>
+            <label>
+              *E-mail ili broj telefona
+              <input type="email" class="email" name="email" id="em">
+            </label>
+            <label>
+              *Paket
+              <textarea class="porudz" placeholder="U polje porudžbina možete da stavite detalje proizvoda koji želite da vam napravimo. Npr: dimenzije, boja..." name="porudzbina" id="por" rows="3"></textarea>
+            </label>
+            <button type="submit" value="Send">Poruči</button>
+            <br>
+            <h6>*Obavezna polja</h6>
+          </form>
+        </div>
+        <div class="col-sm-6 social">
+          <div class="container-fluid">
+            <a href="#" target="_blank">
+              <img src="./img/instagram.png">
+              <p>facebook link</p>
+            </a>
+          </div>
+          <div class="container-fluid">
+            <a href="https://www.instagram.com/metalni_namestaj/" target=_blank>
+              <img src="./img/facebook.png">
+              <p>@metalni_namestaj</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="arrow_up">
+        <a href="#">
+          <img src="./img/up.png">
+        </a>
+      </div>
+
+      <div class="arrow_down">
+        <a href="#">
+          <img src="./img/down.png">
+        </a>
+      </div>
+      
+    </div>
+
+    <footer class="container-fluid text-center">
+      <div class="row upper_ftr">
+        <div class="col-sm-3" id="logo_ftr">
+          <a href="#">
+            <img src="./img/logo-big.png">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://goo.gl/maps/aJFWUuJjCf5Q6MP5A" target="_blank"> <!--lokacija na google maps-->
+            <img src="./img/location.png">
+            <p>Adresa</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="tel:+381 63 251433"> <!--poziv na telefon-->
+            <img src="./img/phone.png">
+            <p>+381 63 251433</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="mailto:njegovmej">
+            <img src="./img/mail.png">
+            <p>E-mail</p>
+          </a>
+        </div>
+      </div>
+      <div class="row copy_rgt">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">
+          <p>Copyright © 2020 <a href="https://www.badzodev.com/" target="_blank" class="kopir"><strong>Sirmium Tag</strong></a></p>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
