@@ -1,9 +1,11 @@
 html{
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 body{
   font-size: 1.6em;
   color: #54310c;
+  overflow-x:hidden;
 }
 
 /*ARROWS-->*/
@@ -98,6 +100,7 @@ body{
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
   background-color: #fff8f0;
+
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
   border-color: #fbefe1;
