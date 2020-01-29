@@ -105,6 +105,14 @@ body{
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
   border-color: #fbefe1;
 }
+@media only screen and (min-width:1600px){
+  nav .container{
+    margin-right: 30px;
+  }
+  nav .navbar-brand img{
+    margin-left: 50px;
+  }
+}
 /*********************************************/
 
 /*KONTAKT-->*/
