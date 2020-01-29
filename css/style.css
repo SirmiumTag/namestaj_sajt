@@ -114,6 +114,37 @@ body{
   }
 }
 /*********************************************/
+/*CAROUSEL-->*/
+header{
+  margin: -20px;
+}
+
+/*****************************************/
+
+
+
+
+/*SEKCIJA!-->*/
+
+#sekcija1{
+ display:grid;
+ grid-template-columns: auto auto auto;
+ margin: 20px;
+
+}
+.klasa2{
+  border-radius: 15px;
+  border-style: solid;
+  box-shadow: 0px 10px 10px 0px #935e1b;
+  height: auto;
+ 
+
+}
+.klasa2 h3{
+  font-weight: bold;
+}
+
+/*****************************************/
 
 /*KONTAKT-->*/
 .contact{
