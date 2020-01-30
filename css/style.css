@@ -321,6 +321,30 @@ header{
 
 /*****************************************/
 
+/*CENOVNIK -->*/
+
+#cncn{
+  font-weight: bold;
+}
+#zaglavlje{
+  background-color: #fbefe1;
+}
+#zaglavlje1{
+  background-color: #fbefe1;
+  color:#54310c;
+}
+#krem{
+  background-color: #935e1b;
+}
+#braonkasta{
+  background-color: #54310c;
+}
+tbody{
+  color:#fbefe1;
+  font-weight: bold;
+}
+/************************************************/
+
 /*KONTAKT-->*/
 .contact{
   padding-bottom: 70px;
