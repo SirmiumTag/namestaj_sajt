@@ -17,7 +17,7 @@ body{
   top: -75px;
   right: 0px;
   height: 50px;
-  transition: opacity 0.3s
+  transition: opacity 0.3s;
 }
 .arrow_up img:hover{
   opacity: 0.65;
@@ -69,12 +69,12 @@ body{
   padding-bottom: 31px;
 }
 .nav.navbar-nav.navbar-right li::after{
-   content: '';
-   display: block;
-   background-color: #935e1b;
-   height: 3px;
-   width: 0px;
-   transition: width 0.3s;
+  content: '';
+  display: block;
+  background-color: #935e1b;
+  height: 3px;
+  width: 0px;
+  transition: width 0.3s;
 }
 .nav.navbar-nav.navbar-right li:hover::after{
   width: 100%;
@@ -309,6 +309,37 @@ tbody{
   font-weight: bold;
   padding-bottom: 35px;
 }
+.galle .pick_one{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.galle .pick_one a{
+  text-decoration: none;
+  padding: 10px 40px 10px 40px;
+  border: none;
+  color: #54310c;
+  background-color: #fbefe1;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+.galle .pick_one a:hover{
+  color: #fbefe1;
+  background-color: #54310c;
+}
+.galle .pick_one #left_pick{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  /*border-right: 1px solid #54310c;*/
+}
+.galle .pick_one #right_pick{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*border-left: 1px solid #54310c;*/
+}
+.galle .pick_one br{
+  display:none;
+}
 .galle img{
   max-width:90%;
   display: flex;
@@ -338,6 +369,11 @@ tbody{
   }
   .galle .row{
     margin-top: 0;
+  }
+  .galle .pick_one a{
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 15px;
   }
 }
 /*sledece dve su klase iz lightbox.css:*/
@@ -410,6 +446,10 @@ label, input, textarea{
   text-align: center;
   text-decoration: none;
   color:#54310c;
+  transition: color 0.3s;
+}
+.contact .social a:hover{
+  color: #935e1b;
 }
 @media only screen and (max-width:767px){
   .contact{
