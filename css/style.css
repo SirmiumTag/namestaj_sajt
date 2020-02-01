@@ -207,10 +207,6 @@ header{
   font-weight: bold;
   padding-left: 40px;
   margin-bottom: 5vh;
-  transition: transform 0.5s;
-}
-.onama h1:hover{
-  transform: rotateX(-180deg);
 }
 .on_text p{
   padding-top: 5vh;
@@ -234,6 +230,11 @@ header{
 .onama .on_img img{
   height: 100vh;
   max-width: 50vw;
+  filter: sepia(0);
+  transition: filter 0.5s;
+}
+.onama .on_img img:hover{
+  filter: sepia(70%);
 }
 .onama .arrow_up{
   top: -100px;
@@ -269,6 +270,34 @@ header{
   }
 }
 /*****************************************/
+
+/*CENOVNIK-->*/
+.ceno{
+  margin-top: 12vh;
+  padding-bottom: 30px;
+}
+#cncn{
+  font-weight: bold;
+  margin-bottom: 8vh;
+}
+#zaglavlje{
+  background-color: #fbefe1;
+}
+#zaglavlje1{
+  background-color: #fbefe1;
+  color:#54310c;
+}
+#krem{
+  background-color: #935e1b;
+}
+#braonkasta{
+  background-color: #54310c;
+}
+tbody{
+  color:#fbefe1;
+  font-weight: bold;
+}
+/************************************************/
 
 /*GALLERY-->*/
 .galle{
@@ -320,30 +349,6 @@ header{
 }
 
 /*****************************************/
-
-/*CENOVNIK -->*/
-
-#cncn{
-  font-weight: bold;
-}
-#zaglavlje{
-  background-color: #fbefe1;
-}
-#zaglavlje1{
-  background-color: #fbefe1;
-  color:#54310c;
-}
-#krem{
-  background-color: #935e1b;
-}
-#braonkasta{
-  background-color: #54310c;
-}
-tbody{
-  color:#fbefe1;
-  font-weight: bold;
-}
-/************************************************/
 
 /*KONTAKT-->*/
 .contact{
@@ -407,6 +412,9 @@ label, input, textarea{
   color:#54310c;
 }
 @media only screen and (max-width:767px){
+  .contact{
+    padding-top: 0;
+  }
   input, textarea, .contact form button{
     width: 80vw;
   }
@@ -445,10 +453,11 @@ footer .upper_ftr #logo_ftr img{
 footer .upper_ftr a{
   text-decoration: none;
   color:#54310c;
+  transition: color 0.3s;
 }
 footer .upper_ftr a:hover{
   text-decoration: none;
-  color:#54310c;
+  color: #935e1b;
 }
 footer .upper_ftr img:hover{
   opacity: 0.65;
@@ -462,7 +471,7 @@ footer .upper_ftr #logo_ftr img:hover{
 }
 .copy_rgt a{
   color: #54310c;
-  transition: 0.3s;
+  transition: color 0.3s;
   text-decoration: none;
 }
 .copy_rgt a:hover{
