@@ -324,18 +324,17 @@ tbody{
   margin-top: 5px;
 }
 .galle .pick_one a:hover{
-  color: #fbefe1;
-  background-color: #54310c;
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.1);
 }
 .galle .pick_one #left_pick{
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  /*border-right: 1px solid #54310c;*/
+  color: #fbefe1;
+  background-color: #54310c;
 }
 .galle .pick_one #right_pick{
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  /*border-left: 1px solid #54310c;*/
 }
 .galle .pick_one br{
   display:none;
@@ -363,6 +362,13 @@ tbody{
 .galle .row{
   margin-top: 50px;
 }
+.galle .zid_krev, .otiraci{
+  display: none;
+  animation: flipInX 0.8s 1;
+}
+.galle .met_nam{
+  animation: flipInX 0.8s 1;
+}
 @media only screen and (max-width:767px){
   .galle .col-sm-3{
     margin-bottom: 50px;
@@ -375,6 +381,12 @@ tbody{
     border-radius: 25px;
     margin-bottom: 15px;
   }
+  .galle .pick_one a:hover{
+    box-shadow: none;
+  }
+  .galle .met_nam, .galle .otiraci, .galle .zid_krev{
+    animation: none;
+  }
 }
 /*sledece dve su klase iz lightbox.css:*/
 .lightbox .lb-image{
@@ -383,7 +395,6 @@ tbody{
 .lb-outerContainer{
   border-radius: 12px;
 }
-
 /*****************************************/
 
 /*KONTAKT-->*/
@@ -516,5 +527,36 @@ footer .upper_ftr #logo_ftr img:hover{
 }
 .copy_rgt a:hover{
   color: #935e1b;
+}
+/*********************************************/
+
+/*KEYFRAMES->*/
+@-webkit-keyframes flipInX{ /*iz animate.css, vise na:https://daneden.github.io/animate.css/ */
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
 }
 /*********************************************/
