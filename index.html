@@ -14,6 +14,8 @@
     <script src="./JavaScript/gallery_filter.js"></script>
     <script src="./JavaScript/Karusel.js"></script>
     <script src="./JavaScript/lightbox.js"></script>
+    <script src="./JavaScript/forma.js"></script>
+
     <meta name="description" content="">
     <meta name="keywords" content="">
   </head>
@@ -430,7 +432,7 @@
       <h1 id="ctct">Kontakt</h1>
       <div class="row">
         <div class="col-sm-6 contact_frm">
-          <form>
+          <form action="#" method="POST" name="SMforma" onsubmit="return validation()">
             <label>
               *Ime i prezime
               <input type="text" class="fname" name="imeprezime" id="imp">
@@ -443,12 +445,12 @@
               *Paket
               <textarea class="porudz" placeholder="U polje porudžbina možete da stavite detalje proizvoda koji želite da vam napravimo. Npr: dimenzije, boja..." name="porudzbina" id="por" rows="3"></textarea>
             </label>
-            <button type="submit" value="Send">Poruči</button>
+            <input type="submit" value="Send">Poruči</input>
             <br>
             <h6>*Obavezna polja</h6>
           </form>
         </div>
-        <div class="col-sm-6 social">
+        <div class="col-sm-3 social">
           <div class="container-fluid">
             <a href="#" target="_blank">
               <img src="./img/instagram.png">
@@ -462,6 +464,7 @@
             </a>
           </div>
         </div>
+          
       </div>
       <div class="arrow_up">
         <a href="#">
@@ -487,21 +490,26 @@
           </a>
         </div>
         <div class="col-sm-3">
-          <a href="https://goo.gl/maps/aJFWUuJjCf5Q6MP5A" target="_blank"> <!--lokacija na google maps-->
-            <img src="./img/location.png">
-            <p>Adresa</p>
-          </a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3193143277626!2d20.475712714840874!3d44.815059084543606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7abc3dc4b4e3%3A0x978fb25efd7c04d6!2sJa%C5%A1e%20Prodanovi%C4%87a%2018%2C%20Beograd%2011000!5e0!3m2!1sen!2srs!4v1580831422169!5m2!1sen!2srs" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <p>Jaše Prodanovića 18, Beograd</p>
+          
         </div>
         <div class="col-sm-3">
-          <a href="tel:+381 63 251433"> <!--poziv na telefon-->
+          <a href="tel:011 3392060"> <!--poziv na telefon-->
             <img src="./img/phone.png">
-            <p>+381 63 251433</p>
+            <p>011/339-20-60</p>
+          </a><br>
+          <a  href="tel:+381 63 251433"> <!--poziv na telefon-->
+            <p style="margin-top: -25px;">+381/63-251-433</p>
+          </a><br>
+          <a href="tel:+381 63 449335"> <!--poziv na telefon-->
+            <p style="margin-top: -25px;">+381/63-449-335</p>
           </a>
         </div>
         <div class="col-sm-3">
-          <a href="mailto:njegovmej">
+          <a href="mailto:>smsistembg@gmail.com">
             <img src="./img/mail.png">
-            <p>E-mail</p>
+            <p>smsistembg@gmail.com</p>
           </a>
         </div>
       </div>
