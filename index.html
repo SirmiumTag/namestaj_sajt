@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/css/lightbox.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./JavaScript/gallery_filter.js"></script>
     <script src="./JavaScript/Karusel.js"></script>
     <script src="./JavaScript/lightbox.js"></script>
     <meta name="description" content="">
@@ -211,31 +212,9 @@
     <div class="container-fluid galle">
       <h1 id="glgl">Galerija</h1>
       <div class="pick_one">
-        <a href="#glgl" id="left_pick">Metalni nameštaj</a><a href="#glgl" id="right_pick">Zidni kreveti</a>
+        <a href="#glgl" id="left_pick" onclick="metNamFun()">Metalni nameštaj</a><a href="#glgl" id="mid_pick" onclick="otiraciFun()">Otirači</a><a href="#glgl" id="right_pick" onclick="zidKrevFun()">Zidni kreveti</a>
       </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./Galerija/1540825725398.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./Galerija/1540825725398.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./Galerija/1540825725398.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./Galerija/1540825725398.jpeg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="row">
+      <div class="row met_nam">
         <div class="col-sm-3">
           <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
             <img src="./Galerija/1540825725398.jpeg" alt="">
@@ -257,7 +236,7 @@
           </a>
         </div>
       </div>
-      <div class="row">
+      <div class="row met_nam">
         <div class="col-sm-3">
           <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
             <img src="./Galerija/1540825725398.jpeg" alt="">
@@ -276,6 +255,160 @@
         <div class="col-sm-3">
           <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
             <img src="./Galerija/1540825725398.jpeg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row met_nam">
+        <div class="col-sm-3">
+          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/1540825725398.jpeg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/1540825725398.jpeg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/1540825725398.jpeg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/1540825725398.jpeg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/1540825725398.jpeg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row zid_krev">
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row zid_krev">
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row zid_krev">
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/krevet.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/krevet.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row otiraci">
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row otiraci">
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row otiraci">
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./Galerija/otirac.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
+            <img src="./Galerija/otirac.jpg" alt="">
           </a>
         </div>
       </div>
