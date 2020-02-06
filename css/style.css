@@ -272,6 +272,7 @@ header{
 /*****************************************/
 
 /*CENOVNIK-->*/
+/*
 .ceno{
   margin-top: 12vh;
   padding-bottom: 30px;
@@ -297,6 +298,7 @@ tbody{
   color:#fbefe1;
   font-weight: bold;
 }
+*/
 /************************************************/
 
 /*GALLERY-->*/
@@ -362,12 +364,19 @@ tbody{
 .galle .row{
   margin-top: 50px;
 }
-.galle .zid_krev, .otiraci{
+.galle .zid_krev, .otiraci, .kanc_nam{
   display: none;
   animation: flipInX 0.8s 1;
 }
 .galle .met_nam{
   animation: flipInX 0.8s 1;
+}
+@media only screen and (max-width: 850px){
+  .galle .pick_one a{
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width:767px){
   .galle .col-sm-3{
@@ -384,7 +393,7 @@ tbody{
   .galle .pick_one a:hover{
     box-shadow: none;
   }
-  .galle .met_nam, .galle .otiraci, .galle .zid_krev{
+  .galle .met_nam, .galle .otiraci, .galle .zid_krev, .galle .kanc_nam{
     animation: none;
   }
 }
@@ -424,20 +433,6 @@ input, textarea {
 label, input, textarea{
   display: block;
 }
-.contact form button{
-  border-radius: 25px;
-  padding: 10px 40px 10px 40px;
-  border: none;
-  color: #54310c;
-  background-color: #fbefe1;
-  font-weight: bold;
-  transition: 0.3s;
-  margin-top: 5px;
-}
-.contact form button:hover{
-  color: #fbefe1;
-  background-color: #54310c;
-}
 .social{
   padding-left: 15%;
   padding-right: 15%;
@@ -459,6 +454,9 @@ label, input, textarea{
   color:#54310c;
   transition: color 0.3s;
 }
+.contact .social a p{
+  text-align: center;
+}
 .contact .social a:hover{
   color: #935e1b;
 }
@@ -466,7 +464,7 @@ label, input, textarea{
   .contact{
     padding-top: 0;
   }
-  input, textarea, .contact form button{
+  input, textarea{
     width: 80vw;
   }
   .social{
@@ -475,7 +473,7 @@ label, input, textarea{
   }
 }
 @media only screen and (max-width:490px){
-  input, textarea, .contact form button{
+  input, textarea{
     width: 70vw;
   }
   .social{
