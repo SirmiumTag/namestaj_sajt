@@ -166,14 +166,14 @@ header{
   border-radius: 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: 0px 10px 10px 0px rgba(147, 94, 27, 0.25); /*#935e1b ista boja, ali rgba zbog opacity*/
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.2);  /*hex: #e7a61a*/
   height: auto;
   transition: box-shadow 0.3s;
   background-color: rgba(251, 239, 225, 0.05); /*#fbefe1*/
   padding-bottom: 12px;
 }
 .klasa2:hover{
-  box-shadow: 0px 10px 25px 0px rgba(147, 94, 27, 0.35);
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.35);
 }
 .klasa2 h3{
   font-weight: bold;
@@ -432,6 +432,16 @@ input, textarea {
 }
 label, input, textarea{
   display: block;
+}
+#btn_pesak{
+  border: none;
+  color: #54310c;
+  background-color: #fbefe1;
+  transition: 0.3s;
+}
+#btn_pesak:hover{
+  background-color: #54310c;
+  color: #fbefe1;
 }
 .social{
   padding-left: 15%;
