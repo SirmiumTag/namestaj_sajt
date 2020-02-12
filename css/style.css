@@ -119,6 +119,31 @@ body{
 }
 /*********************************************/
 
+/*KONTAKT MODAL-->*/
+.btn-unique{
+  width: 100%;
+  border: none;
+  color: #54310c;
+  background-color: #fbefe1;
+  transition: 0.3s;
+  font-size: 1.3em;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btn-unique:hover{
+  background-color: #54310c;
+  color: #fbefe1;
+}
+#obavezno{
+  font-weight:normal;
+}
+.md-form input,.md-form textarea {
+  border-radius: 25px;
+  border: 1px solid #54310c;
+  width: 100%;
+}
+/*********************************************/
+
 /*CAROUSEL-->*/
 header{
   margin: -20px;
@@ -306,6 +331,33 @@ tbody{
   padding-bottom: 70px;
   padding-top: 35px;
 }
+.galle .navbar-inverse{
+  min-height: 0;
+  max-width: 70vw;
+  background-color: #fbefe1;
+  border-color: #fbefe1;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.galle .nav.navbar-nav li a{
+  color: #935e1b;
+}
+.galle .nav.navbar-nav li:active{
+  background-color: #fff8f0;
+}
+.galle .nav.navbar-nav.dropdown.dropdown-menu li{
+  color: #935e1b;
+}
+.galle .navbar-header a{
+  color: #935e1b;
+}
+@media only screen and (max-width:767px){
+  .galle .navbar-inverse{
+    max-width: 90vw;
+    margin-bottom: 35px;
+  }
+}
 .galle h1{
   text-align: center;
   font-weight: bold;
@@ -364,11 +416,7 @@ tbody{
 .galle .row{
   margin-top: 50px;
 }
-.galle .zid_krev, .otiraci, .kanc_nam{
-  display: none;
-  animation: flipInX 0.8s 1;
-}
-.galle .met_nam{
+.galle .row{
   animation: flipInX 0.8s 1;
 }
 @media only screen and (max-width: 850px){
@@ -407,6 +455,7 @@ tbody{
 /*****************************************/
 
 /*KONTAKT-->*/
+/*
 .contact{
   padding-bottom: 70px;
   padding-top: 35px;
@@ -491,6 +540,7 @@ label, input, textarea{
     padding-right: 20%;
   }
 }
+*/
 /*********************************************/
 
 /*FOOTER-->*/
@@ -499,15 +549,9 @@ footer{
   padding-top: 50px;
 }
 footer .upper_ftr img{
-  height: 40px;
+  height: 75px;
   margin-top: 20px;
   transition: opacity 0.3s;
-}
-footer .upper_ftr #logo_ftr img{
-  height: 75px;
-  margin-top:10px;
-  filter: sepia(0);
-  transition: filter 0.5s;
 }
 footer .upper_ftr a{
   text-decoration: none;
@@ -520,10 +564,6 @@ footer .upper_ftr a:hover{
 }
 footer .upper_ftr img:hover{
   opacity: 0.65;
-}
-footer .upper_ftr #logo_ftr img:hover{
-  opacity: 1;
-  filter: sepia(100%);
 }
 .copy_rgt{
   margin-top: 50px;
