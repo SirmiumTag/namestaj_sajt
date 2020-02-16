@@ -1,63 +1,483 @@
-let metNamVar= document.getElementsByClassName("met_nam");
-let zidKrevVar= document.getElementsByClassName("zid_krev");
-let otiraciVar= document.getElementsByClassName("otiraci");
-let kancNamVar= document.getElementsByClassName("kanc_nam");
-let i;
-let metNamFun =()=>{
-  /*
-  document.getElementById("left_pick").style.color = "#fbefe1";
-  document.getElementById("left_pick").style.backgroundColor = "#54310c";
-  document.getElementById("mid_pick").style.color = "#54310c";
-  document.getElementById("mid_pick").style.backgroundColor = "#fbefe1";
-  document.getElementById("right_pick").style.color = "#54310c";
-  document.getElementById("right_pick").style.backgroundColor = "#fbefe1";
-  document.getElementById("mid_pick_2").style.color = "#54310c";
-  document.getElementById("mid_pick_2").style.backgroundColor = "#fbefe1";
-  */
-  for(i= 0; i< 35; i++){
-    metNamVar[i].style.display= "block";
-  }
-  for(i= 0; i< 3; i++){
-    zidKrevVar[i].style.display= "none";
-  }
-  otiraciVar[0].style.display= "none";
-  for(i= 0; i< 5; i++){
-    kancNamVar[i].style.display= "none";
-  }
+let mnStolFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "block";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none";
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
 }
-let otiraciFun =()=>{
-  otiraciVar[0].style.display= "block";
-  for(i= 0; i< 5; i++){
-    kancNamVar[i].style.display= "none";
-  }
-  for(i= 0; i< 35; i++){
-    metNamVar[i].style.display= "none";
-  }
-  for(i= 0; i< 3; i++){
-    zidKrevVar[i].style.display= "none";
-  }
+let pzStolFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "block";
+  document.getElementById("police").style.display = "none";
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
 }
-let zidKrevFun =()=>{
-  for(i= 0; i< 3; i++){
-    zidKrevVar[i].style.display= "block";
-  }
-  for(i= 0; i< 5; i++){
-    kancNamVar[i].style.display= "none";
-  }
-  for(i= 0; i< 35; i++){
-    metNamVar[i].style.display= "none";
-  }
-  otiraciVar[0].style.display= "none";
+let policeFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "block";
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
 }
-let kancNamFun =()=>{
-  for(i= 0; i< 5; i++){
-    kancNamVar[i].style.display= "block";
-  }
-  for(i= 0; i< 3; i++){
-    zidKrevVar[i].style.display= "none";
-  }
-  for(i= 0; i< 35; i++){
-    metNamVar[i].style.display= "none";
-  }
-  otiraciVar[0].style.display= "none";
+let klupeFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "block";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let mnStoliceFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "block";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let mnKrevetiFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "block";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let civiluciFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "block";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let bolNamFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "block";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let mnPoprojFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "block";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let krevPoMeriFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "block";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let sklopKrevFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "block";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let otiraciPoslStamFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "block";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let aluOtiraciFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "block";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let teksOtiraciFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "block";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancFoteljFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "block";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancStoloviFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "block";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancOrmanFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "block";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancKomodeFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "block";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancPokKasFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "block";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancStoliceFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "block";
+  document.getElementById("kanc_po_meri").style.display = "none";
+}
+let kancPoMeriFun =()=>{
+  document.getElementById("mn_stolovi").style.display = "none";
+  document.getElementById("pz_stolove").style.display = "none";
+  document.getElementById("police").style.display = "none"
+  document.getElementById("klupe").style.display = "none";
+  document.getElementById("mn_stolice").style.display = "none";
+  document.getElementById("mn_kreveti").style.display = "none";
+  document.getElementById("civiluci").style.display = "none";
+  document.getElementById("bol_nam").style.display = "none";
+  document.getElementById("mn_poproj").style.display = "none";
+  document.getElementById("krev_po_meri").style.display = "none";
+  document.getElementById("sklop_krev").style.display = "none";
+  document.getElementById("otiraci_posl_stam").style.display = "none";
+  document.getElementById("alu_otiraci").style.display = "none";
+  document.getElementById("teks_otiraci").style.display = "none";
+  document.getElementById("kanc_fotelj").style.display = "none";
+  document.getElementById("kanc_stolovi").style.display = "none";
+  document.getElementById("kanc_ormani").style.display = "none";
+  document.getElementById("kanc_komode").style.display = "none";
+  document.getElementById("kanc_pok_kasete").style.display = "none";
+  document.getElementById("kanc_stolice").style.display = "none";
+  document.getElementById("kanc_po_meri").style.display = "block";
 }
