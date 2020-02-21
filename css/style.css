@@ -89,6 +89,9 @@ body{
   .nav.navbar-nav.navbar-right li:active{
     background-color: #fbefe1;
   }
+  .nevidljivo {
+    display: none;
+  }
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #935e1b;
