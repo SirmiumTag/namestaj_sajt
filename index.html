@@ -16,8 +16,8 @@
     <script src="./JavaScript/lightbox.js"></script>
     <script src="./JavaScript/forma.js"></script>
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Metal furniture Belgrade, Serbia. Proizvodnja metalnog nameštaja, opremanje enterijera, bravarske usluge">
+    <meta name="keywords" content="metalni namestaj, trpezarijski stolovi, barski stolovi, klubski stolovi, postolja za stolove, police, klupe, barske stolice, kreveti, civiluci, bolnicki namestaj, izrada namestaja po projektu, zidni kreveti, sklopivi namestaj, plocasti namestaj po meri, otiraci, otiraci za poslovne i stambene prostorije, aluminijumski otiraci, tekstilni otiraci, kancelarijski namestaj, kancelarijski stolovi, ormani, kancelarijski ormani, komode, kancelarijske komode, pokretne kasete, stolice, kancelarijske stolice, fotelje, kancelarijske fotelje, namestaj po meri, kancelarijski namestaj po meri">
   </head>
   <body>
 
@@ -102,7 +102,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="./SM sistem galerija/kancelarijski namestaj/k10.jpg" alt="Prvi namestaj" style="width:100%;">
+            <img src="./SM sistem galerija/zidni kreveti/sto_karusel.jpg" alt="Prvi namestaj" style="width:100%;">
           </div>
 
           <div class="item">
@@ -110,7 +110,7 @@
           </div>
 
           <div class="item">
-            <img src="./SM sistem galerija/metalni namestaj/m130.jpg" alt="Treci namestaj" style="width:100%;">
+            <img src="./SM sistem galerija/zidni kreveti/solice_karusel.jpg" alt="Treci namestaj" style="width:100%;">
           </div>
 
         </div>
@@ -307,80 +307,1564 @@
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#glgl">Proizvodni program:</a>
+            <a class="navbar-brand" href="#glgl" onclick="gallImgDescFun()">Proizvodni program:</a>
           </div>
           <ul class="nav navbar-nav">
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Metalni nameštaj
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#glgl">Stolovi(trpezarijski, barski, klub)</a></li>
-                <li><a href="#glgl">Postolja za stolove</a></li>
-                <li><a href="#glgl">Police</a></li>
-                <li><a href="#glgl">Klupe</a></li>
-                <li><a href="#glgl">Stolice(barske stolice)</a></li>
-                <li><a href="#glgl">Kreveti</a></li>
-                <li><a href="#glgl">Čiviluci</a></li>
-                <li><a href="#glgl">Bolnički nameštaj</a></li>
-                <li><a href="#glgl">Izrada po projektu</a></li>
+                <li><a href="#glgl" onclick="mnStolFun()">Stolovi(trpezarijski, barski, klub)</a></li>
+                <li><a href="#glgl" onclick="pzStolFun()">Postolja za stolove</a></li>
+                <li><a href="#glgl" onclick="policeFun()">Police</a></li>
+                <li><a href="#glgl" onclick="klupeFun()">Klupe</a></li>
+                <li><a href="#glgl" onclick="mnStoliceFun()">Stolice(barske stolice)</a></li>
+                <li><a href="#glgl" onclick="mnKrevetiFun()">Kreveti</a></li>
+                <li><a href="#glgl" onclick="civiluciFun()">Čiviluci</a></li>
+                <li><a href="#glgl" onclick="bolNamFun()">Bolnički nameštaj</a></li>
+                <li><a href="#glgl" onclick="mnPoprojFun()">Izrada po projektu</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Zidni krevet
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Zidni kreveti
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#glgl">Sklopivi nameštaj</a></li>
-                <li><a href="#glgl">Pločasti nameštaj po meri</a></li>
+                <li><a href="#glgl" onclick="sklopKrevFun()">Sklopivi nameštaj</a></li>
+                <li><a href="#glgl" onclick="krevPoMeriFun()">Pločasti nameštaj po meri</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Otirači
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#glgl">Za poslovne i stambene prostorije</a></li>
-                <li><a href="#glgl">Aluminijumski otirači</a></li>
-                <li><a href="#glgl">Tekstilni otirači</a></li>
+                <li><a href="#glgl" onclick="otiraciPoslStamFun()">Za poslovne i stambene prostorije</a></li>
+                <li><a href="#glgl" onclick="aluOtiraciFun()">Aluminijumski otirači</a></li>
+                <li><a href="#glgl" onclick="teksOtiraciFun()">Tekstilni otirači</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Kancelarijski nameštaj
               <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#glgl">Stolovi</a></li>
-                <li><a href="#glgl">Ormani</a></li>
-                <li><a href="#glgl">Komode</a></li>
-                <li><a href="#glgl">Pokretne kasete</a></li>
-                <li><a href="#glgl">Stolice</a></li>
-                <li><a href="#glgl">Fotelje</a></li>
-                <li><a href="#glgl">Nameštaj po meri</a></li>
+                <li><a href="#glgl" onclick="kancStoloviFun()">Stolovi</a></li>
+                <li><a href="#glgl" onclick="kancOrmanFun()">Ormani</a></li>
+                <li><a href="#glgl" onclick="kancKomodeFun()">Komode</a></li>
+                <li><a href="#glgl" onclick="kancPokKasFun()">Pokretne kasete</a></li>
+                <li><a href="#glgl" onclick="kancStoliceFun()">Stolice</a></li>
+                <li><a href="#glgl" onclick="kancFoteljFun()">Fotelje</a></li>
+                <li><a href="#glgl" onclick="kancPoMeriFun()">Nameštaj po meri</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </nav>
 
+<!--METALNI NAMESTAJ:-->
+
+      <div class="container-fluid" id="mn_stolovi">
+        <h2>Metalni nameštaj- Stolovi</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl1.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl2.jpeg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl2.jpeg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl3.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl4.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl5.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl6.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl7.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl8.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl9.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/kl10.jpg" data-lightbox="gallery" data-title="klubski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/kl10.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb1.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb2.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb3.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb4.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb5.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb6.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb7.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb8.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb9.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/mb10.jpg" data-lightbox="gallery" data-title="barski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/mb10.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t1.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t2.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t3.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t4.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t5.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t6.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t7.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t8.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t9.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t10.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t10.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t11.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t11.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolovi/t12.jpg" data-lightbox="gallery" data-title="trpezarijski sto">
+              <img src="./SM sistem galerija/metalni namestaj/stolovi/t12.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="pz_stolove">
+        <h2>Metalni nameštaj- Postolja za stolove</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp1.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp2.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp3.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp4.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp5.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp6.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp7.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp8.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp9.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp10.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp10.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp11.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp11.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp12.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp12.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp13.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp13.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp14.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp14.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp15.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp15.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp16.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp16.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp17.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp17.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp18.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp18.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp19.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp19.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp20.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp20.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp21.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp21.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp22.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp22.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp23.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp23.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp24.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp24.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp25.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp25.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp26.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp26.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp27.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp27.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp28.jpg" data-lightbox="gallery" data-title="postolje za sto">
+              <img src="./SM sistem galerija/metalni namestaj/postoljaZaStolove/mp28.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="police">
+        <h2>Metalni nameštaj- Police</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/m35.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/m35.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/m74.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/m74.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm1.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm2.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm2.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm3.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm4.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm4.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm5.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm6.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm6.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm7.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm8.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm8.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm9.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm10.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm10.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm11.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm11.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm12.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm12.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm13.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm13.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm14.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm14.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm15.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm15.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm16.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm16.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/police/mm17.jpg" data-lightbox="gallery" data-title="polica">
+              <img src="./SM sistem galerija/metalni namestaj/police/mm17.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="klupe">
+        <h2>Metalni nameštaj- Klupe</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/m101.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/m101.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k1.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k2.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k3.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k3.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k4.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k4.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k5.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/klupe/k6.jpg" data-lightbox="gallery" data-title="klupa">
+              <img src="./SM sistem galerija/metalni namestaj/klupe/k6.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="mn_stolice">
+        <h2>Metalni nameštaj- Stolice(barske stolice)</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms1.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms2.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms3.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms4.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms5.webp" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms5.webp" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms6.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms7.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms8.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms9.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms10.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms10.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms11.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms11.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms12.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms12.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms13.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms13.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms14.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms14.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms15.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms15.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms16.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms16.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms17.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms17.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms18.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms18.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms19.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms19.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms20.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms20.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms21.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms21.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms22.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms22.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms23.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms23.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms24.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms24.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms25.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms25.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms26.png" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms26.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms27.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms27.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms28.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms28.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms29.jpg" data-lightbox="gallery" data-title="barska stolica">
+              <img src="./SM sistem galerija/metalni namestaj/stolice/barske stolice/ms29.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="mn_kreveti">
+        <h2>Metalni nameštaj- Kreveti</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv1.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv2.jpeg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv2.jpeg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv3.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv4.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv5.webp" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv5.webp" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv6.webp" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv6.webp" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv7.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv8.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv9.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/kreveti/krv10.jpg" data-lightbox="gallery" data-title="krevet">
+              <img src="./SM sistem galerija/metalni namestaj/kreveti/krv10.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="civiluci">
+        <h2>Metalni nameštaj- Čiviluci</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc1.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc2.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc3.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc4.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc5.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc6.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc7.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/civiluci/mc8.jpg" data-lightbox="gallery" data-title="civiluk">
+              <img src="./SM sistem galerija/metalni namestaj/civiluci/mc8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="bol_nam">
+        <h2>Metalni nameštaj- Bolnički nameštaj</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb1.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb2.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb3.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb4.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb5.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb6.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb7.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb7.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb8.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb9.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb9.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb10.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb10.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb11.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb11.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb12.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb12.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb13.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb13.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb14.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb14.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb15.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb15.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb16.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb16.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb17.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb17.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb18.jpg" data-lightbox="gallery" data-title="bolnički nameštaj">
+              <img src="./SM sistem galerija/metalni namestaj/bolnickiNamestaj/mnb18.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="mn_poproj">
+        <h2>Metalni nameštaj- Po projektu</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/l1.jpg" data-lightbox="gallery" data-title="lampa">
+              <img src="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/l1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/l2.jpg" data-lightbox="gallery" data-title="lampa">
+              <img src="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/l2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/m37.jpg" data-lightbox="gallery" data-title="orman">
+              <img src="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/m37.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/m71.jpg" data-lightbox="gallery" data-title="orman">
+              <img src="./SM sistem galerija/metalni namestaj/izradaNamestajaPoProjektu/m71.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+<!--:METALNI NAMESTAJ-->
+
+<!--ZIDNI KREVETI:-->
+
+      <div class="container-fluid" id="sklop_krev">
+        <h2>Zidni kreveti- Sklopivi nameštaj</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z3.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z5.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z6.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z6.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z7.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z7.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z8.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/sklopiviKreveti/z8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid" id="krev_po_meri">
+        <h2>Zidni kreveti- Pločasti nameštaj po meri</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev1.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev2.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev3.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev4.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev5.jpg" data-lightbox="gallery" data-title="sklopivi zidni krevet">
+              <img src="./SM sistem galerija/zidni kreveti/krevetiPoMeri/mkrev5.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+<!--:ZIDNI KREVETI-->
+
+<!--OTIRACI:-->
+
+    <div class="container-fluid" id="otiraci_posl_stam">
+      <h2>Otirači- Za poslovne i stambene prostorije</h2>
       <div class="row">
         <div class="col-sm-3">
-          <a href="./SM sistem galerija/metalni namestaj/m1.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./SM sistem galerija/metalni namestaj/m1.jpg" alt="">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os1.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os1.jpg" alt="">
           </a>
         </div>
         <div class="col-sm-3">
-          <a href="./SM sistem galerija/metalni namestaj/m2.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./SM sistem galerija/metalni namestaj/m2.jpg" alt="">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os2.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os2.jpg" alt="">
           </a>
         </div>
         <div class="col-sm-3">
-          <a href="./SM sistem galerija/metalni namestaj/m3.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./SM sistem galerija/metalni namestaj/m3.jpg" alt="">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os3.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os3.jpg" alt="">
           </a>
         </div>
         <div class="col-sm-3">
-          <a href="./SM sistem galerija/metalni namestaj/m4.jpg" data-lightbox="gallery" data-title="Slika u galeriji">
-            <img src="./SM sistem galerija/metalni namestaj/m4.jpg" alt="">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os4.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os4.jpg" alt="">
           </a>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os5.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os6.jpg" data-lightbox="gallery" data-title="otirač za poslovne i stambene prostorije">
+            <img src="./SM sistem galerija/otiraci/otiraciZaPoslovneIStambeneProstorije/os6.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="alu_otiraci">
+      <h2>Otirači- Aluminijumski otirači</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o1.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o2.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o3.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o4.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o5.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o6.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o7.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o8.jpg" data-lightbox="gallery" data-title="aluminijumski otirač">
+            <img src="./SM sistem galerija/otiraci/aluminijumskiOtiraci/o8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="teks_otiraci">
+      <h2>Otirači- Tekstilni otirači</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm1.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm2.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm3.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm4.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm5.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm6.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/otiraci/tekstilniOtiraci/tm7.jpg" data-lightbox="gallery" data-title="tekstilni otirač">
+            <img src="./SM sistem galerija/otiraci/tekstilniOtiraci/tm7.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+<!--:OTIRACI-->
+
+<!--KANCELARIJSKI:-->
+
+    <div class="container-fluid" id="kanc_stolovi">
+      <h2>Kancelarijski nameštaj- Kancelarijski stolovi</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks1.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks2.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks3.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks4.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks5.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks6.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks7.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks8.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks9.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks9.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolovi/ks10.jpg" data-lightbox="gallery" data-title="kancelarijski sto">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolovi/ks10.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_ormani">
+      <h2>Kancelarijski nameštaj- Kancelarijski ormani</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or1.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or2.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or3.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or4.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or5.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or6.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or7.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/ormani/or8.jpg" data-lightbox="gallery" data-title="kancelarijski orman">
+            <img src="./SM sistem galerija/kancelarijski namestaj/ormani/or8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_komode">
+      <h2>Kancelarijski nameštaj- Kancelarijske komode</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km1.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km2.jpeg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km2.jpeg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km3.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km4.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km5.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km6.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km7.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km8.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km9.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km9.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/komode/km10.jpg" data-lightbox="gallery" data-title="kancelarijska komoda">
+            <img src="./SM sistem galerija/kancelarijski namestaj/komode/km10.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_pok_kasete">
+      <h2>Kancelarijski nameštaj- Pokretne kasete</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk1.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk2.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk3.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk4.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk5.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk6.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk7.jpg" data-lightbox="gallery" data-title="pokretna kaseta">
+            <img src="./SM sistem galerija/kancelarijski namestaj/pokretneKasete/pokk7.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_stolice">
+      <h2>Kancelarijski nameštaj- Kancelarijske stolice</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks1.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks2.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks3.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks4.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks5.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks6.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks7.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/stolice/ks8.jpg" data-lightbox="gallery" data-title="kancelarijska stolica">
+            <img src="./SM sistem galerija/kancelarijski namestaj/stolice/ks8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_fotelj">
+      <h2>Kancelarijski nameštaj- Kancelarijske fotelje</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf1.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf2.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf3.png" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf3.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf4.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf5.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf6.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf6.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf7.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf7.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf8.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf8.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf9.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf9.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/fotelje/kf10.jpg" data-lightbox="gallery" data-title="kancelarijska fotelja">
+            <img src="./SM sistem galerija/kancelarijski namestaj/fotelje/kf10.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="kanc_po_meri">
+      <h2>Kancelarijski nameštaj- Po meri</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm1.jpg" data-lightbox="gallery" data-title="komoda po meri">
+            <img src="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm2.jpg" data-lightbox="gallery" data-title="pokretna kaseta po meri">
+            <img src="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm3.jpg" data-lightbox="gallery" data-title="kancelarijski sto po meri">
+            <img src="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm4.jpg" data-lightbox="gallery" data-title="kancelarijski orman po meri">
+            <img src="./SM sistem galerija/kancelarijski namestaj/namestajPoMeri/knpm4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!--:KANCELARIJSKI-->
+
 
       <div class="arrow_up">
         <a href="#">
